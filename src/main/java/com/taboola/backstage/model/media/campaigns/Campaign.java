@@ -110,6 +110,7 @@ public class Campaign {
     protected CampaignUnipRuleOptimizations conversionRules;
     protected AttributionConfig conversionConfiguration;
     protected String isSpendGuardActive;
+    protected CampaignPredefinedTargetingOptions predefinedTargetingOptions;
 
     public String getId() {
         return id;
@@ -395,6 +396,14 @@ public class Campaign {
 
     public String getIsSpendGuardActive() {
         return isSpendGuardActive;
+    }
+
+    public CampaignPredefinedTargetingOptions getPredefinedTargetingOptions() {
+        return predefinedTargetingOptions;
+    }
+
+    public void setPredefinedTargetingOptions(CampaignPredefinedTargetingOptions predefinedTargetingOptions) {
+        this.predefinedTargetingOptions = predefinedTargetingOptions;
     }
 
     @Override
