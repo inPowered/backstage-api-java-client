@@ -94,6 +94,7 @@ public class Campaign {
     @ReadOnly
     protected CampaignStatus status;
     protected Double cpaGoal;
+    protected Double cpcCap;
     protected CampaignPricingModel pricingModel;
     protected ExternalBrandSafety externalBrandSafety;
     protected VerificationPixel verificationPixel;
@@ -112,6 +113,14 @@ public class Campaign {
 
     public String getId() {
         return id;
+    }
+
+    public Double getCpcCap() {
+        return cpcCap;
+    }
+
+    public void setCpcCap(Double cpcCap) {
+        this.cpcCap = cpcCap;
     }
 
     public String getAdvertiserId() {
@@ -410,6 +419,7 @@ public class Campaign {
                 ", brandingText='" + brandingText + '\'' +
                 ", trackingCode='" + trackingCode + '\'' +
                 ", cpc=" + cpc +
+                ", cpcCap=" + cpcCap +
                 ", dailyCap=" + dailyCap +
                 ", dailyAdDeliveryModel=" + dailyAdDeliveryModel +
                 ", publisherBidModifier=" + publisherBidModifier +
