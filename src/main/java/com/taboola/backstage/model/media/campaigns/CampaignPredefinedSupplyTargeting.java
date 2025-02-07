@@ -12,5 +12,6 @@ package com.taboola.backstage.model.media.campaigns;
  */
 public enum CampaignPredefinedSupplyTargeting {
     ALL,
-    YAHOO_MAIL
+    YAHOO_MAIL,
+    MAIL
 }
